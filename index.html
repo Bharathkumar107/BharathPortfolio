@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b536a07e0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Bharath</h1>
+
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()" id="menu"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            </nav>
+            <div class="headertext">
+                <p>Fresher</p>
+                <h1>Hi! I'am <span>Bharath Kumar Pulibandla</span><br>From Andhra Pradesh</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="myimage.jpeg" id="mypic">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>This is "BHARATH KUMAR P" ,I am completed my Graduation at "AITS Rajampet" in the stream of
+                        'Civil Engineering' with CGPA of "7.92"I also did my DIPLOMA at "E.S.C.Govt.Polytechnic,Nandyal"
+                        in the same stream with percentage of '73' and done my SSC at "St.Josephs Hs
+                        Peddakottala,Nandyal District" with CGPA of '9.3'</p>
+                    <div class="tabtitles">
+                        <div class="tablinks activelink" onclick="opentab('skills')">Skills</div>
+                        <div class="tablinks " onclick="opentab('experience')">Experience</div>
+                        <div class="tablinks " onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tabcontents activetab" id="skills">
+                        <ul>
+                            <li><span>JAVA</span><br>Good in JAVA</li>
+                            <li><span>Frameworks</span><br>Good in Hibernate and Spring Boot</li>
+
+                            <li><span>SQL</span><br>Quite good in SQL</li>
+                            <li><span>HTML&CSS<i class="fa-brands fa-html5"></i><i
+                                        class="fa-brands fa-css3"></i></span><br>Quite good in HTML&CSS</li>
+                            <li><span>JAVA SCRIPT<i class="fa-brands fa-js"></i></span><br>Good in JAVA SCRIPT</li>
+
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="experience">
+                        <ul>
+                            <li>Fresher</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>
+                                <span id="bharath">B.Tech</span><br>Civil Engineering<br>Annamacharya Institute of
+                                Technology&Sciences,Rajampet<br>CGPA:7.92
+                            </li>
+                            <li><span>2020</span><br><span id="bharath">Diploma</span><br>Civil
+                                Engineering<br>E.S.C.Govt.Polytechnic,Nandyal<br>percentage:73</li>
+                            <li><span>2017</span><br><span id="bharath">SSC</span><br>St.Josephs Hs Peddakottala,Nandyal
+                                District<br>CGPA:9.3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------projects----------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 id="mine">My Projects <i class="fa-solid fa-diagram-project"></i></h1>
+            <div class="projectslist">
+                <div>
+                    <h2>ShopNest Project
+                    </h2>
+                    <p>ShopNest is an e-commerce full stack web application.
+                        The admin user can add new products where as the customer can explore products, add them to the
+                        cart as well as check out.
+                        The users need to register and login to access functionalities.
+                        Technology used: Java EE, Servlets, JSPs, Jdbc, Css, Oracle DBMS</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>bharathkumarp0505@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6301700244</p>
+                    <div class="socialicons">
+                        <a href="https://www.linkedin.com/in/bharathkumarpulibandla"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Bharathkumar107"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/Bharath_DNaruto?t=Nhgg6P-tIdzcsngD9ZWoUQ&s=08"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download
+                        CV</a>
+                </div>
+                <div class="contactright">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="thanks">
+            <p>Thank you for visiting<i class="fa-regular fa-face-grin-hearts"></i></p>
+            <p>Visit Again<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tablinks");
+        var tabcontents = document.getElementsByClassName("tabcontents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("activelink");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("activetab")
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0px";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-100px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzRgDePYEGUr9Ioe0q-2wBxR54reYDwE-BC8pjTJ6TA9F7tZ3-QoHFooywaFwVimMW5/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            
+        })
+    </script>
+</body>
+
+</html>
